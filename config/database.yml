@@ -21,7 +21,7 @@ development:
   database: funnelcake_test_development
   pool: 5
   username: root
-  password:
+  password: trustno1
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -34,7 +34,7 @@ test:
   database: funnelcake_test_test
   pool: 5
   username: root
-  password:
+  password: trustno1
   socket: /var/run/mysqld/mysqld.sock
 
 production:
@@ -44,5 +44,5 @@ production:
   database: funnelcake_test_production
   pool: 5
   username: root
-  password: 
+  password: trustno1
   socket: /var/run/mysqld/mysqld.sock
