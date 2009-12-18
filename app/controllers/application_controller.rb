@@ -7,4 +7,23 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+  layout 'standard'
+
+  has_visitor_tracking :cookie_name=>:transfs_ut
+
+  def current_user
+    nil
+  end
+ 
+  def logged_in?
+    false
+  end
+
+  before_filter :setup_includes
+  def setup_includes
+    @stylesheets = [:admin]
+    @javascripts = [:admin]
+  end
+
 end

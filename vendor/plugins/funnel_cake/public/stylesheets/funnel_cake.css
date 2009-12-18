@@ -1,0 +1,169 @@
+div.graph_attrs {
+	display: none;
+}
+div.graph_node {
+	border: 1px solid #000;
+	background-color: #EAEAEA;
+	font-size: 9px;
+	line-height: 11px;
+}
+div.graph_node .entering {
+	float: left;
+	padding-left: 3px;
+	margin-top: -1px;
+}
+div.graph_node .label {
+	font-weight: bold;
+	display: inline;
+	margin-top: -1px;
+}
+div.graph_node .exiting {
+	font-weight: bold;
+	float: right;
+	padding-right: 3px;
+	margin-top: -1px;
+}
+div.primary {
+	border: 1px solid #00F;
+	background-color: #DEF;
+}
+div.graph_edge {
+	margin-left: 20px;
+}
+
+div.funnel_conversion {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+div.funnel_conversion .funnel_container {
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+div.funnel_conversion .label {
+	width: 100%;
+	height: 17px;
+	margin: 0;
+	padding: 0;
+	line-height: 13px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 3px;
+}
+div.funnel_conversion .stats_container {
+	line-height: 14px;
+	text-align: center;
+}
+div.funnel_conversion span.count {
+	color: #666;
+	font-size: 11px;
+}
+div.funnel_conversion span.rate {
+	font-weight: bold;
+	font-size: 12px;
+}
+div.funnel_conversion span.previous {
+	font-weight: normal;
+	font-size: 10px;
+}
+div.funnel_conversion .hidden {
+	display: none;
+}
+div.funnel_conversion .spinner {
+	height: 15px;
+	width: 15px;
+	z-index: 10;
+}
+
+div.funnel_conversion_graph {
+	float:left;
+	padding-bottom:20px;
+	width:325px;
+	height:100px;
+}
+div.funnel_conversion_graph .graph {
+	width:325px;
+	height:100px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+div.data_table table {
+	/* border: 1px solid #000; */
+	width: 100%;
+	border-collapse: collapse;
+}
+div.data_table table td {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ACACAC;
+	line-height: 12px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+div.data_table table tr.padded td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+div.data_table table tr.header th {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	font-weight: bold;
+}
+
+img.spinner {
+	width: 15px;
+	height: 15px;
+	z-index: 10;
+}
+img.spinner_bar {
+	width: 220px;
+	height: 19px;
+	z-index: 10;
+}
+div.conversion_detail {
+	float: left;
+	border: 1px solid #888;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding:15px;
+	background-color: #F0FAFF;
+}
+div.conversion_detail h3 {
+	display: inline;
+}
+
+div.visitors_notes td {
+	line-height: 15px;
+	padding: 0px 10px;
+}
+
+div.big_stat {
+	background-color: #E0EFFF;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border: 1px solid #ACACAC;
+	float: left;
+	padding: 3px 8px;
+	margin: 3px;
+}
+div.big_stat h2 {
+	font-size: 24px;
+	margin-bottom: 0.5em;
+	padding-bottom: 0em;
+	background: none;
+	display: inline;
+}
+div.big_stat h3 {
+	display: inline;
+	font-size: 16px;
+}

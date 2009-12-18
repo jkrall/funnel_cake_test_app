@@ -1,0 +1,8 @@
+<div id='conversion_detail_<%=@state%>-<%=@next_state%>' class='conversion_detail'>
+	<h2><%= "#{@state.to_s.titleize} to #{@next_state.to_s.titleize}" %></h2>
+	<p><%= link_to "View this Conversion in Detail", analytics_conversion_path("#{@state}-#{@next_state}") %></p>
+	<div class='visitors_notes_container' id='visitors_notes_container_<%=@state%>-<%=@next_state%>' style='clear: both;'>
+		<%= render 'visitors', :state=>@state, :options=>@options %>
+	</div><br />
+	<%= render 'analytics/states/graph', :state=>@next_state, :time_period=>(@date_range.end.to_date - @date_range.begin.to_date).to_i.days %>
+</div>

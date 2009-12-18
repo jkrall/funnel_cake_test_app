@@ -1,0 +1,26 @@
+var updateVisitorInfo = function(opts) {
+	if (!opts) opts = {};
+	$$('.visitors_notes_container').each(function(e){
+
+		var state_name = e.id.sub(/visitors_notes_container_/,'');
+		var state = state_name.split(/-/)[0];
+		var next_state = state_name.split(/-/)[1];
+
+		var p_start = opts.period_start;
+		var p_end = opts.period_end;
+
+		var params = $H({
+			authenticity_token: '<%=escape_javascript(form_authenticity_token)%>',
+			date_range_start: p_start,
+			date_range_end: p_end
+		}).merge(opts);
+
+		new Ajax.Updater(e.id, '/analytics/conversions/'+state+'-'+next_state+'/visitors',
+			{
+				asynchronous:true,
+				method:'get',
+				parameters: params
+			}
+		);
+	});
+};

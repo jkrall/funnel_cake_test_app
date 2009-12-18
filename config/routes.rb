@@ -35,9 +35,28 @@ ActionController::Routing::Routes.draw do |map|
 
   # See how all your routes lay out with "rake routes"
 
+
+  map.namespace :analytics do |analytics|
+    analytics.resources :events
+    analytics.resources :conversions, :member=>{:history=>:get, :visitors=>:get}
+    analytics.resources :states, :member=>{:visitors=>:get}
+    analytics.resources :ignores
+    analytics.resources :visitors
+    analytics.resources :stats
+    analytics.resources :dashboards, :collection=>{
+      :main=>:get,
+      :cec=>:get,
+      :diagram=>:get,
+      :overview=>:get,
+      :clear_cache=>:get,
+      :customers=>:get,
+    }
+  end
+
+
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  map.connect ':controller/:action/:id', :controller=>:admin
+  map.connect ':controller/:action/:id.:format', :controller=>:admin
 end

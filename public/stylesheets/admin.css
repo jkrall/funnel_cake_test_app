@@ -1,0 +1,432 @@
+/* Colors
+ * Darkblue: 	#163257
+ * Teal:		#6BB0BF
+ * Tan:			#D6D5B9
+ * Gray:		#ACACAC
+ * LightGray:	#DFDFDF
+ * Orange:		#E19A5A
+ * DarkOrange:	#BF5500
+ */
+
+/* reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+body {
+    background: #ffffff;
+    text-align: left;
+    padding: 0px;
+    margin: 5px;
+    height: 100%;
+		font-size: 10px;
+    line-height: 15px;
+    font-family: Verdana;
+	 color: #000;
+}
+
+/* grid.css */
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+div.span-1, div.span-2, div.span-3, div.span-4, div.span-5, div.span-6, div.span-7, div.span-8, div.span-9, div.span-10, div.span-11, div.span-12 {float:left;margin-right: 24px;}
+
+/* The last column in a row needs this class. */
+div.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1  { width: 39px;}
+.span-2  { width: 102px;}
+.span-3  { width: 165px;}
+.span-4  { width: 228px;}
+.span-5  { width: 291px;}
+.span-6  { width: 354px;}
+.span-7  { width: 417px;}
+.span-8  { width: 480px;}
+.span-9  { width: 543px;}
+.span-10 { width: 606px;}
+.span-11 { width: 669px;}
+.span-12, div.span-12 { width: 732px; margin: 0; }
+input.span-1, textarea.span-1, select.span-1 {width:29px!important;}
+input.span-2, textarea.span-2, select.span-2 {width:92px!important;}
+input.span-3, textarea.span-3, select.span-3 {width:155px!important;}
+input.span-4, textarea.span-4, select.span-4 {width:218px!important;}
+input.span-5, textarea.span-5, select.span-5 {width:281px!important;}
+input.span-6, textarea.span-6, select.span-6 {width:344px!important;}
+input.span-7, textarea.span-7, select.span-7 {width:407px!important;}
+input.span-8, textarea.span-8, select.span-8 {width:470px!important;}
+input.span-9, textarea.span-9, select.span-9 {width:533px!important;}
+input.span-10, textarea.span-10, select.span-10 {width:596px!important;}
+input.span-11, textarea.span-11, select.span-11 {width:659px!important;}
+input.span-12, textarea.span-12, select.span-12 {width:722px!important;}
+
+/* Add these to a column to append empty cols. */
+.append-1  { padding-right: 63px;}
+.append-2  { padding-right: 126px;}
+.append-3  { padding-right: 189px;}
+.append-4  { padding-right: 252px;}
+.append-5  { padding-right: 315px;}
+.append-6  { padding-right: 378px;}
+.append-7  { padding-right: 441px;}
+.append-8  { padding-right: 504px;}
+.append-9  { padding-right: 567px;}
+.append-10 { padding-right: 630px;}
+.append-11 { padding-right: 693px;}
+
+
+/* Add these to a column to prepend empty cols. */
+.prepend-1  { padding-left: 63px;}
+.prepend-2  { padding-left: 126px;}
+.prepend-3  { padding-left: 189px;}
+.prepend-4  { padding-left: 252px;}
+.prepend-5  { padding-left: 315px;}
+.prepend-6  { padding-left: 378px;}
+.prepend-7  { padding-left: 441px;}
+.prepend-8  { padding-left: 504px;}
+.prepend-9  { padding-left: 567px;}
+.prepend-10 { padding-left: 630px;}
+.prepend-11 { padding-left: 693px;}
+
+
+/* Border on right hand side of a column. */
+div.border {
+  padding-right:11px;
+  margin-right:12px;
+  border-right: 1px solid #eee;
+}
+
+/* Border with more whitespace, spans one column. */
+div.colborder {
+  padding-right:30px;
+  margin-right:27px;
+  border-right: 1px solid #eee;
+}
+
+/* Use these classes on an element to push it into the
+   next column, or to pull it into the previous column.  */
+
+.pull-1 { margin-left: -63px;}
+.pull-2 { margin-left: -126px;}
+.pull-3 { margin-left: -189px;}
+.pull-4 { margin-left: -252px;}
+.pull-5 { margin-left: -315px;}
+.pull-6 { margin-left: -378px;}
+.pull-7 { margin-left: -441px;}
+.pull-8 { margin-left: -504px;}
+.pull-9 { margin-left: -567px;}
+.pull-10 { margin-left: -630px;}
+.pull-11 { margin-left: -693px;}
+.pull-12 { margin-left: -756px;}
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12 {float:left;position:relative;}
+
+
+.push-1 { margin: 0 -63px 1.5em 63px;}
+.push-2 { margin: 0 -126px 1.5em 126px;}
+.push-3 { margin: 0 -189px 1.5em 189px;}
+.push-4 { margin: 0 -252px 1.5em 252px;}
+.push-5 { margin: 0 -315px 1.5em 315px;}
+.push-6 { margin: 0 -378px 1.5em 378px;}
+.push-7 { margin: 0 -441px 1.5em 441px;}
+.push-8 { margin: 0 -504px 1.5em 504px;}
+.push-9 { margin: 0 -567px 1.5em 567px;}
+.push-10 { margin: 0 -630px 1.5em 630px;}
+.push-11 { margin: 0 -693px 1.5em 693px;}
+.push-12 { margin: 0 -756px 1.5em 756px;}
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12 {float:right;position:relative;}
+
+.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix, .container {display:block;}
+.clear {clear:both;}
+div.full_space { width: 100%; }
+
+
+/****** TITLES, INPUTS AND HRS ******
+h1 {
+    text-align: left;
+    font-family: Verdana, Arial, Verdana, Courier New, Courier, Helvetica;
+    font-size: 14px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    text-transform: capitalize;
+}
+
+h2 {
+    width: 99%;
+    height: 25px;
+    background: #6bb0bf;
+    text-align: left;
+    font-family: Verdana, Arial, Verdana, Courier New, Courier, Helvetica;
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding-top: 8px;
+    padding-left: 5px;
+    border-bottom: 3px solid #888888;
+}
+*/
+
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#666;}
+h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:1.5em;font-weight:bold;padding-bottom:0.8em;margin-bottom:0.75em;text-transform:uppercase;color:#666;}
+h2 span { color: #999; }
+h3 {font-size:1.5em;line-height:1.25;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+
+.container {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.section {
+	margin-bottom: 2em;
+}
+.full_width {
+	width: 100%;
+	float:left;
+	margin-right: 24px;
+}
+
+.section h1 {
+	float: left;
+	width: 100%;
+	padding: 0 24px;
+	margin: 0 -24px 1em;
+
+	background: url(../images/bg-ribbon.png) repeat-x left bottom;
+	font-weight: bold;
+	font-size: 2.5em;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.section h2 {
+	background: url(../images/bg-heading-border.png) repeat-x left bottom;
+}
+
+.section h1 span { color: #666; }
+
+.section .sidenote {
+	float: right;
+	margin-top: -2px;
+	margin-right: -252px;
+	width: 228px;
+	padding-top: 1.5em;
+	border-top: 2px solid #e5e5e5;
+	color: #999;
+}
+
+.section h2 + .sidenote { margin-top: -2em; padding-top: 1.8em; }
+
+
+fieldset {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+input.textInput {
+    border: 1px solid #C0c0c0;
+    margin-bottom: 2px;
+    font-family: Verdana;
+    font-size: 10px;
+    width: 155px;
+    margin: 0px;
+    padding: 0px;
+}
+
+textarea.textInput {
+    border: 1px solid #909090;
+    font-family: Verdana;
+    font-size: 10px;
+}
+
+input.submitButton {
+    border: 1px solid #909090;
+    font-family: Verdana;
+    font-size: 10px;
+    color: #505050;
+    background: #FFFFFF;
+}
+
+hr {
+    height: 2px;
+    color: #ACACAC;
+    background-color: #ACACAC;
+    border: 0;
+    padding: 0px;
+}
+
+img {
+    border: 0px solid;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+td {
+	line-height: 20px;
+}
+
+table.section {
+	margin-bottom: 10px;
+}
+
+h3 {
+    font-family: Verdana;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: Verdana;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+div.clear {
+	clear: both;
+	display: block;
+}
+
+tr.small_row td {
+	font-size: 8px;
+	line-height: 10px;
+	border-top: none;
+}
+
+div.admin_menu {
+	height: 25px;
+	width: 100%;
+}
+div.admin_menu_item {
+	float: left;
+	width: auto;
+	height: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 5px;
+	padding-left: 10px;
+	border-left: 2px solid #ACACAC;
+}
+div.admin_menu_item a {
+    text-align: left;
+    padding: 0px;
+    margin: 5px;
+    height: 100%;
+	 	font-size: 10px;
+    line-height: 17px;
+    font-family: Verdana;
+}
+
+table.admin_vtable {
+	width: auto;
+	border-collapse: collapse;
+}
+table.admin_vtable th {
+	text-align: right;
+	padding-right: 5px;
+	border: 0;
+	line-height: 12px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-weight: bold;
+}
+table.admin_vtable td {
+	border: 0;
+	line-height: 12px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+table.admin_table {
+	/* border: 1px solid #000; */
+	width: 100%;
+	border-collapse: collapse;
+}
+table.admin_table td {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #DDD;
+	line-height: 12px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+tr.admin_table_padded td, tr.admin_table_padded th {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+table.admin_table th {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #888;
+	font-weight: bold;
+}
+.nice_margins td {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.flash {
+	margin-right: 5px;
+	margin-top: 0px;
+	padding-top: 3px;
+	float: right;
+	width: auto;
+	height: 15px;
+   color: #880000;
+	background-color: #FFFFFF;
+}
+div.lineBlue {
+    float: left;
+    width: 100%;
+    height: 2px;
+    font-size: 1px;
+    border-bottom: 2px solid #163257;
+    margin-bottom: 2px;
+}
+div.stripeBeige {
+    float: left;
+    width: 100%;
+    height: 8px;
+    background: #d6d5b9;
+    margin-bottom: 10px;
+}
+
+.gray {
+	background-color: #DDDDDD;
+}
+.green {
+	background-color: #88DD88;
+}
+.red {
+	background-color: #DD8888;
+}
+
+.approved {
+	background-color: #CCFFCC;
+}
+.pending {
+	background-color: #FFCCCC;
+}
