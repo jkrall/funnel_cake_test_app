@@ -1,4 +1,0 @@
-module Analytics::ConversionsHelper
-
-
-end

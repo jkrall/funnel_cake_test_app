@@ -1,5 +1,0 @@
-module Analytics::StatesHelper
-
-
-
-end
