@@ -1,0 +1,16 @@
+# Un-Comment these out if you want to enable activerecord logging
+# ActiveRecord::Base.logger = Logger.new(STDOUT)
+# ActiveRecord::Base.connection.instance_variable_set('@logger', ActiveRecord::Base.logger)
+
+date_range = 0.days.ago.beginning_of_month.to_date...0.days.ago.end_of_month.to_date
+
+require 'benchmark'
+n = 5
+Benchmark.bm do |x|
+  x.report do
+    n.times do
+      Rails.cache.clear
+      FunnelCake::Engine.conversion_stats :page_visited, :auction_started, :date_range=>date_range, :has_event_matching=>{:url=>'credit-card-processing'}
+    end
+  end
+end

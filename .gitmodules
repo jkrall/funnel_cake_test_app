@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/funnel_cake"]
+	path = vendor/plugins/funnel_cake
+	url = git://github.com/jkrall/funnel_cake.git
