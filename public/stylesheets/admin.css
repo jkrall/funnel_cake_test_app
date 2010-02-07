@@ -212,7 +212,8 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
 }
 
 .section h2 {
-	background: url(../images/bg-heading-border.png) repeat-x left bottom;
+	border-bottom: 2px solid #CCCCCC;
+  padding-bottom: 0.2em;
 }
 
 .section h1 span { color: #666; }
